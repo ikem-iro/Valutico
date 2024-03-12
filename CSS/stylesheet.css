@@ -1,0 +1,1005 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0px 6px 11px -4px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1;
+  backdrop-filter: blur(0.5rem);
+  background-color: #ffffffbf;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  text-align: center;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  cursor: pointer;
+}
+.checkmark {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+/* CTA button */
+.cta-button {
+  width: 17.4rem;
+  height: 4.68rem;
+  display: flex;
+  background-color: #6fc247;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.toggle-button {
+  position: relative;
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 8.679rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.herodiv {
+  width: 60.5rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.herodiv h1 {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.herodiv p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 36.7rem;
+  height: 4.69rem;
+  font-weight: bolder;
+  align-items: center;
+}
+.signup-button {
+  width: 17.4rem;
+  height: 4.68rem;
+  display: flex;
+  border: 0.125rem solid #6fc247;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #6fc247;
+  cursor: pointer;
+}
+
+/* Image section */
+.image-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-img-container {
+  margin: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-img {
+  display: flex;
+  width: 78.75rem;
+  height: 39.8rem;
+  margin: 3.5rem 1rem;
+}
+
+/* Trusted Section */
+.Trusted-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Trusted-container {
+  margin: 4rem;
+  text-align: center;
+}
+.Trusted-container h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.Trusted-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.Trusted-paragraph p {
+  width: 66.375rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.Trusted-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Trusted-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem 1rem;
+}
+
+/* Why Valutico Section */
+.why-valutico-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+}
+.why-valutico-container {
+  margin: 4.5rem 6.438rem;
+  width: 81.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.why-valutico-texts {
+  width: 55.813rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.why-valutico-texts-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-valutico-texts-header h3 {
+  color: #ffffff;
+  width: 17.563rem;
+  font-size: 2.5rem;
+}
+.why-valutico-texts-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d7d7d7;
+}
+
+.why-valutico-texts-paragraph p {
+  font-size: 1.25rem;
+  width: 55.813rem;
+  padding: 0 1rem;
+}
+
+.why-valutico-subsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.75rem;
+}
+.why-valutico-subsection-texts {
+  text-align: start;
+}
+
+.why-valutico-subsection-texts h4 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.why-valutico-subsection-texts p {
+  color: #d7d7d7;
+  font-size: 1.25rem;
+}
+
+.why-valutico-subsection-texts-1 h4 {
+  width: 5.313rem;
+}
+.why-valutico-subsection-texts-1 p {
+  width: 27.375rem;
+}
+
+.why-valutico-subsection-texts-2 h4 {
+  width: 6rem;
+}
+.why-valutico-subsection-texts-2 p {
+  width: 27.375rem;
+}
+.why-valutico-subsection-texts-3 h4 {
+  width: 19.438rem;
+}
+.why-valutico-subsection-texts-3 p {
+  width: 24.688rem;
+}
+
+/* Accurate Valuation Section*/
+.Accurate-valuation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Accurate-valuation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 94.375rem;
+  margin: 4.313rem;
+}
+.Accurate-valuation-container-heading-texts {
+  text-align: center;
+}
+.Accurate-valuation-container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Accurate-valuation-container-header h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 30.563rem;
+}
+.Accurate-valuation-container-header-paragraph p {
+  width: 66.375rem;
+  font-size: 1.25rem;
+  padding: 0 1rem;
+}
+.Accurate-valuation-container-body {
+  width: 81.5rem;
+  display: flex;
+  padding: 5rem 0;
+  gap: 5.313rem;
+}
+
+.Accurate-valuation-container-body-right {
+  width: 45.688rem;
+  height: 43.313rem;
+  margin-right: 0.5rem;
+}
+
+.Accurate-valuation-container-body-left {
+  width: 29.813rem;
+  height: 43.313rem;
+}
+
+.Accurate-valuation-container-body-left-container {
+  margin: 2rem;
+  height: 39.31rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.Accurate-valuation-container-body-left-container-content-1 {
+  height: 14.063rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Accurate-valuation-container-body-left-container-content-2 {
+  height: 14.063rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Accurate-valuation-container-body-left-container-content-3 {
+  height: 12.188rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Accurate-valuation-container-body-left-container-content-1-header {
+  width: 18.5rem;
+}
+.Accurate-valuation-container-body-left-container-content-1-header h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.Accurate-valuation-container-body-left-container-content-1-paragraph p {
+  font-size: 1.25rem;
+}
+
+.Accurate-valuation-container-body-left-container-content-2-header {
+  width: 21.438rem;
+}
+.Accurate-valuation-container-body-left-container-content-2-header h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Accurate-valuation-container-body-left-container-content-2-paragraph p {
+  font-size: 1.25rem;
+  padding-right: 1.5rem;
+}
+
+.Accurate-valuation-container-body-left-container-content-3-header {
+  width: 21.313rem;
+}
+.Accurate-valuation-container-body-left-container-content-3-header h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Accurate-valuation-container-body-left-container-content-3-paragraph p {
+  font-size: 1.25rem;
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 1329px) {
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 6px 11px -4px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(0.5rem);
+    background-color: #ffffffbf;
+    top: 0;
+  }
+  ul {
+    display: none;
+  }
+  .navbar .cta-button {
+    display: none;
+  }
+  .toggle-button {
+    display: block;
+  }
+
+  /* Hero section */
+  .hero {
+    margin-top: 6.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .herodiv {
+    width: 47.125rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .herodiv h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
+  .herodiv p {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  /* Image section */
+  .image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard-img {
+    display: flex;
+    width: 47.125rem;
+    height: 23.875rem;
+    margin: 3.5rem 0;
+  }
+  .dashboard-img img {
+    width: 47.125rem;
+    height: 23.875rem;
+  }
+
+  /* Trusted Section */
+  .Trusted-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Trusted-container {
+    width: 47.125rem;
+    margin: 2rem;
+    text-align: center;
+  }
+  .Trusted-container h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .Trusted-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .Trusted-paragraph p {
+    width: 47.125rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .Trusted-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Trusted-grid {
+    display: grid;
+    width: 42rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .Trusted-grid img {
+    width: 13.3rem;
+    height: 5rem;
+  }
+
+  /* Why Valutico Section */
+  .why-valutico-container {
+    margin: 4.5rem 6.438rem;
+    width: 47.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .why-valutico-texts {
+    width: 47.125rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .why-valutico-texts-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-valutico-texts-header h3 {
+    color: #ffffff;
+    width: 10.563rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .why-valutico-texts-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d7d7d7;
+  }
+
+  .why-valutico-texts-paragraph p {
+    font-size: 1.25rem;
+    width: 47.125rem;
+    padding: 0 0.5rem;
+  }
+
+  .why-valutico-subsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .why-valutico-subsection-texts h4 {
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    width: 47.125rem;
+  }
+
+  .why-valutico-subsection-texts p {
+    color: #d7d7d7;
+    font-size: 1rem;
+    width: 47.125rem;
+  }
+
+  /* Accurate Valuation Section*/
+  .Accurate-valuation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 47.125rem;
+  }
+  .Accurate-valuation-container-heading-texts {
+    text-align: center;
+  }
+  .Accurate-valuation-container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Accurate-valuation-container-header h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 22.938rem;
+  }
+  .Accurate-valuation-container-header-paragraph p {
+    width: 47.125rem;
+    font-size: 1.25rem;
+    padding: 0 1rem;
+  }
+  .Accurate-valuation-container-body {
+    width: 47.125rem;
+    padding: 5rem 0;
+    gap: 1rem;
+  }
+
+  .Accurate-valuation-container-body-right {
+    width: 23.063rem;
+    margin-right: 0;
+    height: 43.313rem;
+  }
+
+  .Accurate-valuation-container-body-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Accurate-valuation-container-body-left {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 23.063rem;
+    height: 43.313rem;
+  }
+
+  .Accurate-valuation-container-body-left-container {
+    margin: 2rem 0;
+    height: 39.31rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2.5rem;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-1 {
+    height: 14.063rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-2 {
+    height: 14.063rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-3 {
+    height: 12.188rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-1-header h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  .Accurate-valuation-container-body-left-container-content-1-paragraph p {
+    font-size: 1rem;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-2-header {
+    width: 21.438rem;
+  }
+  .Accurate-valuation-container-body-left-container-content-2-header h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-2-paragraph p {
+    font-size: 1rem;
+    padding-right: 3rem;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-3-header {
+    width: 21.313rem;
+  }
+  .Accurate-valuation-container-body-left-container-content-3-header h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-3-paragraph p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 6px 11px -4px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(0.5rem);
+    background-color: #ffffffbf;
+    top: 0;
+  }
+
+  /* Hero section */
+  .hero {
+    margin-top: 4.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .herodiv {
+    width: 20.563rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .herodiv h1 {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  .herodiv p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 20.438rem;
+    height: 2.75rem;
+    font-size: 0.875rem;
+    font-weight: bolder;
+    align-items: center;
+  }
+  .signup-button {
+    width: 9.5rem;
+    height: 2.75rem;
+    display: flex;
+    border: 0.125rem solid #6fc247;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #6fc247;
+    cursor: pointer;
+  }
+
+  .buttons .cta-button {
+    width: 9.5rem;
+    height: 2.75rem;
+    border-radius: 0.5rem;
+  }
+  .buttons .checkmark {
+    gap: 0.1rem;
+  }
+
+  /* Image section */
+  .image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard-img {
+    display: flex;
+    width: 20.438rem;
+    height: 10.5rem;
+    margin: 1.75rem 0;
+  }
+  .dashboard-img img {
+    width: 20.438rem;
+    height: 10.5rem;
+  }
+
+  /* Trusted Section */
+  .Trusted-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Trusted-container {
+    width: 20.563rem;
+    margin: 2rem;
+    text-align: center;
+  }
+  .Trusted-container h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
+  .Trusted-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.3rem;
+  }
+
+  .Trusted-paragraph p {
+    width: 20.563rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .Trusted-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Trusted-grid {
+    display: grid;
+    width: 20.563rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+  }
+  .Trusted-grid img {
+    width: 10rem;
+    height: 3.875rem;
+  }
+
+  /* Why Valutico Section */
+  .why-valutico-container {
+    margin: 4.5rem 6.438rem;
+    width: 20.563rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .why-valutico-texts {
+    width: 20.563rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .why-valutico-texts-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-valutico-texts-header h3 {
+    color: #ffffff;
+    width: 8.813rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .why-valutico-texts-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d7d7d7;
+  }
+
+  .why-valutico-texts-paragraph p {
+    font-size: 1rem;
+    width: 20.563rem;
+    padding: 0 0.3rem;
+  }
+
+  .why-valutico-subsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .why-valutico-subsection-texts h4 {
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    width: 20.563rem;
+  }
+
+  .why-valutico-subsection-texts p {
+    color: #d7d7d7;
+    font-size: 1rem;
+    width: 20.563rem;
+  }
+
+  /* Accurate Valuation Section*/
+  .Accurate-valuation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20.438rem;
+  }
+  .Accurate-valuation-container-heading-texts {
+    text-align: center;
+  }
+  .Accurate-valuation-container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Accurate-valuation-container-header h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    width: 20.438rem;
+  }
+  .Accurate-valuation-container-header-paragraph p {
+    width: 20.438rem;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  .Accurate-valuation-container-body {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 20.438rem;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .Accurate-valuation-container-body-right {
+    width: 20.438rem;
+    margin-right: 0;
+    height: 19.375rem;
+  }
+
+  .Accurate-valuation-container-body-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Accurate-valuation-container-body-left {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 20.438rem;
+    height: 43.313rem;
+  }
+
+  .Accurate-valuation-container-body-left-container {
+    margin: 2rem 0;
+    height: 39.31rem;
+    width: 20.438rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2.5rem;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-1 {
+    height: 14.063rem;
+    width: 20.438rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-2 {
+    height: 14.063rem;
+    width: 20.438rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-3 {
+    height: 12.188rem;
+    width: 20.438rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-1-header h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  .Accurate-valuation-container-body-left-container-content-1-paragraph p {
+    font-size: 1rem;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-2-header {
+    width: 20.438rem;
+  }
+  .Accurate-valuation-container-body-left-container-content-2-header h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-2-paragraph p {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-3-header {
+    width: 20.438rem;
+  }
+  .Accurate-valuation-container-body-left-container-content-3-header h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .Accurate-valuation-container-body-left-container-content-3-paragraph p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  .Accurate-valuation-container .cta-button {
+    font-size: 0.875rem;
+    font-weight: bold;
+    width: 9.5rem;
+    height: 2.75rem;
+    border-radius: 0.5rem;
+  }
+  .Accurate-valuation-container .checkmark {
+    gap: 0.1rem;
+  }
+}
