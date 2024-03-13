@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <script defer src="./js/script.js" type="text/javascript"></script>
   </head>
   <body>
     <div id="navbar-section" class="navbar-section">
@@ -23,28 +24,33 @@
         <div class="logo">
           <img src="./assets/logo.svg" alt="logo" />
         </div>
-        <ul>
-          <li>Home</li>
-          <li>
+        <ul class="nav-menu">
+          <li class="nav-menu-items">Home</li>
+          <li class="nav-menu-items">
             Solutions<img
               class="chevron-down"
               src="./assets/dropdown.svg"
               alt=""
             />
           </li>
-          <li>
+          <li class="nav-menu-items">
             Your work<img
               class="chevron-down"
               src="./assets/dropdown.svg "
               alt=""
             />
           </li>
-          <li>
+          <li class="nav-menu-items">
             Company<img
               class="chevron-down"
               src="./assets/dropdown.svg"
               alt=""
             />
+          </li>
+          <li class="nav-menu-items">
+            <a class="cta-button checkmark" href=""
+              >Request a Demo<img src="./assets/icon.svg" alt=""
+            /></a>
           </li>
         </ul>
         <div>
@@ -53,7 +59,9 @@
           /></a>
         </div>
         <div class="toggle-button">
-          <img src="./assets/Vector.svg" alt="" />
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </nav>
     </div>

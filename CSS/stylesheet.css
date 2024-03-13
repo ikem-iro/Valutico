@@ -6,6 +6,14 @@
 
 body {
   font-family: "Manrope", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 /* Navbar */
@@ -32,20 +40,23 @@ body {
   align-items: center;
 }
 
-ul {
-  list-style: none;
+.nav-menu {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
   text-align: center;
 }
 
-li {
+.nav-menu .nav-menu-items {
   display: flex;
   align-items: center;
   gap: 1.3rem;
   cursor: pointer;
 }
+.nav-menu .cta-button {
+  display: none;
+}
+
 .checkmark {
   display: flex;
   align-items: center;
@@ -61,14 +72,21 @@ li {
   border-radius: 1rem;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   color: #fff;
   cursor: pointer;
 }
 
 .toggle-button {
-  position: relative;
   display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
 
 /* Hero Section */
@@ -117,7 +135,6 @@ li {
   border-radius: 1rem;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   color: #6fc247;
   cursor: pointer;
 }
@@ -386,7 +403,7 @@ li {
   padding-right: 2rem;
 }
 
-@media screen and (max-width: 1329px) {
+@media screen and (max-width: 1382px) {
   /* Navbar */
   .navbar {
     width: 100%;
@@ -401,17 +418,47 @@ li {
     z-index: 1;
     -webkit-backdrop-filter: blur(0.5rem);
     backdrop-filter: blur(0.5rem);
-    background-color: #ffffffbf;
+    background-color: #ffffffef;
     top: 0;
   }
-  ul {
-    display: none;
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    padding-top: 3rem;
+    flex-direction: column;
+    background-color: #ffffffef;
+    transition: ease-in all 0.3s;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: 0px 6px 11px -4px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-menu.active {
+    left: 0;
   }
   .navbar .cta-button {
     display: none;
   }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
   .toggle-button {
     display: block;
+    cursor: pointer;
+  }
+  .toggle-button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .toggle-button.active .bar:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+  }
+  .toggle-button.active .bar:nth-child(3){
+    transform: translateY(-0.5rem) rotate(-45deg);
   }
 
   /* Hero section */
