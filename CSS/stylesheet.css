@@ -53,9 +53,7 @@ li {
   gap: 1.3rem;
   cursor: pointer;
 }
-.nav-menu .cta-button {
-  display: none;
-}
+
 
 .checkmark {
   display: flex;
