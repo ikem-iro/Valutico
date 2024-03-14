@@ -44,7 +44,7 @@ li {
   border: solid 0.9375rem #065666;
   border-top-color: #6fc247;
   border-radius: 50%;
-  animation: loading 0.8s ease infinite;
+  animation: loading 0.8s ease-out infinite;
 }
 
 @keyframes loading {
@@ -446,6 +446,15 @@ li {
 }
 
 @media screen and (max-width: 1382px) {
+  .loader::after {
+    content: "";
+    width: 2.6875rem;
+    height: 2.6875rem;
+    border: solid 0.625rem #065666;
+    border-top-color: #6fc247;
+    border-radius: 50%;
+    animation: loading 0.8s ease-out infinite;
+  }
   /* Navbar */
   .navbar {
     width: 100%;
@@ -774,6 +783,15 @@ li {
 }
 
 @media screen and (max-width: 834px) {
+  .loader::after {
+    content: "";
+    width: 1.6875rem;
+    height: 1.6875rem;
+    border: solid 0.5rem #065666;
+    border-top-color: #6fc247;
+    border-radius: 50%;
+    animation: loading 0.8s ease-out infinite;
+  }
   /* Navbar */
   .navbar {
     width: 100%;
