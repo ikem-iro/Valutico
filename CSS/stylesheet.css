@@ -94,6 +94,11 @@ li {
   cursor: pointer;
 }
 
+.nav-menu-items:first-child .chevron-down {
+  visibility: hidden;
+  appearance: none;
+}
+
 .checkmark {
   display: flex;
   align-items: center;
