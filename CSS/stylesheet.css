@@ -16,6 +16,46 @@ li {
   list-style: none;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+.loader {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 4.6875rem;
+  height: 4.6875rem;
+  border: solid 0.9375rem #065666;
+  border-top-color: #6fc247;
+  border-radius: 50%;
+  animation: loading 0.8s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -53,7 +93,6 @@ li {
   gap: 1.3rem;
   cursor: pointer;
 }
-
 
 .checkmark {
   display: flex;
@@ -419,10 +458,11 @@ li {
     background-color: #ffffffef;
     top: 0;
   }
+
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 4rem;
+    top: -1000%;
     padding-top: 3rem;
     flex-direction: column;
     background-color: #ffffffef;
@@ -435,8 +475,14 @@ li {
     align-items: center;
     width: 100%;
   }
+
   .nav-menu.active {
+    top: 100%;
     left: 0;
+  }
+
+  .nav-menu-items:last-child {
+    margin-bottom: 3rem;
   }
   .navbar .cta-button {
     display: none;
@@ -455,7 +501,7 @@ li {
   .toggle-button.active .bar:nth-child(1) {
     transform: translateY(0.5rem) rotate(45deg);
   }
-  .toggle-button.active .bar:nth-child(3){
+  .toggle-button.active .bar:nth-child(3) {
     transform: translateY(-0.5rem) rotate(-45deg);
   }
 
@@ -739,6 +785,27 @@ li {
     backdrop-filter: blur(0.5rem);
     background-color: #ffffffbf;
     top: 0;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    padding-top: 3rem;
+    flex-direction: column;
+    background-color: #ffffffef;
+    transition: ease-in all 0.3s;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: 0px 6px 11px -4px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    left: 0;
   }
 
   /* Hero section */
